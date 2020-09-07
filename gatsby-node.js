@@ -36,7 +36,7 @@ exports.sourceNodes =  async ({ actions, reporter, createNodeId, createContentDi
 
         if (option.length > 0){
             Object.keys(data[option]).forEach(key => {
-                console.log(data[option][key])
+                
                 const record = data[option][key];
                 const nodeContent = JSON.stringify(record)
                 const nodeMeta = {
@@ -54,7 +54,7 @@ exports.sourceNodes =  async ({ actions, reporter, createNodeId, createContentDi
             })
         } else {
             Object.keys(data).forEach(key => {
-                console.log(data[key])
+                
                 const record = data[key];
                 const nodeContent = JSON.stringify(record)
                 const nodeMeta = {
@@ -74,10 +74,6 @@ exports.sourceNodes =  async ({ actions, reporter, createNodeId, createContentDi
 
 
     })
-
-    
-    //const { option, nodeType} = configOptions
-
 
     
 }
